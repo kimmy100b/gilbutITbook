@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="C:/Program Files/apache-tomcat-8.5.60/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/apache-tomcat-8.5.60/lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/apache-tomcat-8.5.60/lib/mysql-connector-java-8.0.22.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/apache-tomcat-8.5.60/lib/tomcat-dbcp.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

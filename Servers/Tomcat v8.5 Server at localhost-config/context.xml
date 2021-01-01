@@ -25,4 +25,15 @@
     <!--
     <Manager pathname="" />
     -->
+    <Resource
+    	name = "jdbc/mysql"
+    	auth = "Container"
+    	type = "javax.sql.DataSource"
+    	driverClass = "com.mysql.jdbc.Driver"
+    	url = "jdbc:mysql://localhost:3306/bookShop?serverTimezone=Asia/Seoul"
+    	username = "scott"
+    	password = "tiger"
+    	maxActive = "50"
+    	maxWait = "1"
+    />
 </Context>
