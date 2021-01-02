@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TestServlet3
  */
-//@WebServlet("*.do")
-@WebServlet("/*")
+@WebServlet("*.do")
+//@WebServlet("/*")
 public class TestServlet3 extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
