@@ -28,7 +28,7 @@ list-style:none ; border-bottom: 2px solid lightgray;position:relative; }
 %>
 <li>
       <a href='#' style='margin-left:50px'  >
-<img src='image/duke.png' width='90' height='90' alt='' /></a>
+	  <img src='image/duke.png' width='90' height='90' alt='' /></a>
       <a href='#' ><strong>이미지 이름: 듀크<%=i %> </strong></a>
       <a href='#' > <input  name='chk<%=i %>' type='checkbox'  /></a>
 </li>
