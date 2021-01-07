@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>아이디 중복검사</title>
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+  	function fn_process(){
+  		var _id = $('#t_id').val();
+  		if(_id == ''){
+  			alert("ID를 입력하세요");
+  			return;
+  		}
+  		$.ajax({
+  			type: "post",
+  			async: false,
+  			url: "http://localhost:8080/pro16/mem",
+  			data: { id: _id},
+  			success:function(data, textStatus){
+  				if(data == 'usable'){
+  					$('#msg').text("사용할 수 있는 id입니다.");
+  					$('#btn_duplicate').prop("disable", true);
+  				}else{
+  					$('#msg').text("사용할 수 없는 id입니다.");
+  				}
+  			},
+  			error:function(data, textStatus){
+  				alert("오류가 발생했습니다.");
+  			}
+  		})
+  	}
+  </script>
+</head>
+<body>
+<input type="text" name="id" id="t_id" />
+<input type="button" id="btn_duplicate" value="중복체크" onClick="fn_process()" />
+<div id="msg"></div>
+</body>
+</html>
