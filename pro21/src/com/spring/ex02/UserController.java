@@ -33,7 +33,7 @@ public class UserController extends MultiActionController {
 		mav.addObject("userID", userID);
 		mav.addObject("passwd", passwd);
 		//mav.setViewName("result");
-		mav.setViewName(viewName);
+		mav.setViewName(viewName); //뷰 이름 지정
 	    System.out.println("ViewName:"+viewName);
 		return mav;
 	}
@@ -45,15 +45,18 @@ public class UserController extends MultiActionController {
 	    String pwd=request.getParameter("pwd");
 	    String name=request.getParameter("name");
 	    String email=request.getParameter("email");
+	    String viewName=getViewName(request);
 
 	    mav.addObject("id",id);
 	    mav.addObject("pwd",pwd);
 	    mav.addObject("name",name);
 	    mav.addObject("email",email);
-	    mav.setViewName("memberInfo");
+	    //mav.setViewName("memberInfo");
+	    mav.setViewName(viewName); //뷰 이름 지정
 	    return mav;
 	}
 	
+	// .do를 제외한 요청명을 구하는 메서드
 	private  String getViewName(HttpServletRequest request) throws Exception {
 	      String contextPath = request.getContextPath();
 	      String uri = (String)request.getAttribute("javax.servlet.include.request_uri");
