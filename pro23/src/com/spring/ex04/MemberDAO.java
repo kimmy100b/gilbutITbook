@@ -88,6 +88,7 @@ public class MemberDAO {
 	public List<MemberVO> searchMember(MemberVO memberVO) {
 		sqlMapper = getInstance();
 		SqlSession session = sqlMapper.openSession();
+		System.out.println(memberVO);
 		List list = session.selectList("mapper.member.searchMember", memberVO);
 		return list;
 	}

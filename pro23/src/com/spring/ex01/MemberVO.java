@@ -12,6 +12,12 @@ public class MemberVO {
 	public MemberVO() {
 
 	}
+	
+	
+//	public MemberVO(String name, String email) {
+//		this.name = name;
+//		this.email = email;
+//	}
 
 	public MemberVO(String id, String pwd, String name, String email) {
 		this.id = id;
