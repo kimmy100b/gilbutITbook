@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<form   method="post"  action="${contextPath}/test/login2.do">
+<form   method="post"  action="${contextPath}/test/login.do">
     <!-- <input  type="hidden"  name="email" value="hong@test.com" /> -->
 	<table width="400">
 		<tr>
