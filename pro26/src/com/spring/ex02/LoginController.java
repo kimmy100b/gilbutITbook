@@ -55,7 +55,7 @@ public class LoginController {
 		return mav;
 	}*/
 
-	
+	/*
 	@RequestMapping(value = "/test/login2.do", method = { RequestMethod.GET, RequestMethod.POST })
 	public ModelAndView login2(@RequestParam("userID") String userID, 
                                @RequestParam(value="userName", required=true) String userName,
@@ -75,9 +75,9 @@ public class LoginController {
 		mav.addObject("userName", userName);
 		return mav;
 	}
-	
+	*/
 
-	/*@RequestMapping(value = "/test/login3.do", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "/test/login3.do", method = { RequestMethod.GET, RequestMethod.POST })
 	public ModelAndView login3(@RequestParam Map<String, String> info,
 			                   HttpServletRequest request, HttpServletResponse response) throws Exception {
 		request.setCharacterEncoding("utf-8");
@@ -91,7 +91,7 @@ public class LoginController {
 		mav.addObject("info", info);
 		mav.setViewName("result");
 		return mav;
-	}*/
+	}
 	
 	/*@RequestMapping(value = "/test/login4.do", method = { RequestMethod.GET, RequestMethod.POST })
 	public ModelAndView login4(@ModelAttribute("info") LoginVO loginVO,
