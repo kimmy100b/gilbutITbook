@@ -37,7 +37,7 @@ public class MemberControllerImpl implements MemberController {
 //		String viewName = (String)request.getAttribute("viewName");
 //		System.out.println("viewName: " +viewName);
 //		logger.info("viewName: " + viewName);
-		logger.debug("viewName: " + viewName);
+		logger.debug("debug·¹º§ : viewName = " + viewName);
 		List membersList = memberService.listMembers();
 		ModelAndView mav = new ModelAndView(viewName);
 		mav.addObject("membersList", membersList);

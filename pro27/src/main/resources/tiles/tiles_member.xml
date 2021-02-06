@@ -29,7 +29,6 @@
       <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
    </definition>
       
-<!-- 
    <definition name="/member/memberForm" extends="baseLayout">
       <put-attribute name="title" value="회원등록창" />
       <put-attribute name="body" value="/WEB-INF/views/member/memberForm.jsp" />
@@ -38,5 +37,5 @@
    <definition name="/member/viewDetail" extends="baseLayout">
       <put-attribute name="title" value="회원상세창" />
       <put-attribute name="body" value="/WEB-INF/views/member/viewDetail.jsp" />
-   </definition> -->
+   </definition> 
 </tiles-definitions>
