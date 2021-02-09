@@ -14,11 +14,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import net.coobird.thumbnailator.Thumbnails;
 
-/*@Controller*/
+@Controller
 public class FileDownloadController {
-	private static String CURR_IMAGE_REPO_PATH = "c:\\spring\\image_repo";
+	private static String CURR_IMAGE_REPO_PATH = "D:\\test\\spring\\image_repo";
 	
-	/*@RequestMapping("/download")*/
+	/*
+	@RequestMapping("/download")
 	protected void download(@RequestParam("imageFileName") String imageFileName,
 			                 HttpServletResponse response) throws Exception {
 		OutputStream out = response.getOutputStream();
@@ -43,8 +44,9 @@ public class FileDownloadController {
 		in.close();
 		out.close();
 	}
+	*/
 	
-/*	
+
 	@RequestMapping("/download")
 	protected void download(@RequestParam("imageFileName") String imageFileName,
 			                 HttpServletResponse response) throws Exception {
@@ -63,5 +65,5 @@ public class FileDownloadController {
 		out.write(buffer);
 		out.close();
 	}
-	*/
+
 }

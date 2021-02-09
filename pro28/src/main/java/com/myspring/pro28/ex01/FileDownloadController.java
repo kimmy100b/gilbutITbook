@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-@Controller
+//@Controller
 public class FileDownloadController {
 	private static String CURR_IMAGE_REPO_PATH = "D:\\test\\spring\\image_repo";
 
-	@RequestMapping("/download")
+	//@RequestMapping("/download")
 	public void download(@RequestParam("imageFileName") String imageFileName,
 			                 HttpServletResponse response)throws Exception {
 		OutputStream out = response.getOutputStream();
