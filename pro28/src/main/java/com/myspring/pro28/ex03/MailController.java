@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/*@Controller*/
+@Controller
 @EnableAsync
 public class MailController {
     @Autowired
@@ -23,7 +23,7 @@ public class MailController {
     	request.setCharacterEncoding("utf-8");
     	response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
-        mailService.sendMail("수신자@naver.com","테스트 메일","안녕하세요.보낸 메일 내용입니다.");
+        mailService.sendMail("받는사람@naver.com","테스트 메일","안녕하세요.보낸 메일 내용입니다.");
         mailService.sendPreConfiguredMail("테스트 메일입니다.");
         out.print("메일을 보냈습니다!!");
     }

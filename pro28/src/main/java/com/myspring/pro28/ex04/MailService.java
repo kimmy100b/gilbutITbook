@@ -10,7 +10,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-@Service("mailService")
+//@Service("mailService")
 public class MailService {
 	@Autowired
 	 private JavaMailSender mailSender;
