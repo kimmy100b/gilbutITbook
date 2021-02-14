@@ -12,15 +12,17 @@
   $(function() {
       $("#checkJson").click(function() {
       	var article = {articleNO:"114", 
-	               writer:"박지성",
-	               title:"안녕하세요", 
+	               writer:"신윤정",
+	               title:"환영합니다.", 
 	               content:"상품 소개 글입니다."
 	              };
   
   	$.ajax({
   	    //type:"POST",
         //url:"${contextPath}/boards",
-        type:"PUT",
+        //type:"PUT",
+        //url:"${contextPath}/boards/114",
+        type:"DELETE",
         url:"${contextPath}/boards/114",
         contentType: "application/json",
         data :JSON.stringify(article),
