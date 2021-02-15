@@ -24,7 +24,7 @@ public class BoardDAOImpl implements BoardDAO {
 		return articlesList;
 	}
 
-	
+	// 글 번호 반환
 	@Override
 	public int insertNewArticle(Map articleMap) throws DataAccessException {
 		int articleNO = selectNewArticleNO();
@@ -32,9 +32,7 @@ public class BoardDAOImpl implements BoardDAO {
 		sqlSession.insert("mapper.board.insertNewArticle",articleMap);
 		return articleNO;
 	}
-    
-	//다중 파일 업로드
-	/*
+	
 	@Override
 	public void insertNewImage(Map articleMap) throws DataAccessException {
 		List<ImageVO> imageFileList = (ArrayList)articleMap.get("imageFileList");
@@ -46,8 +44,6 @@ public class BoardDAOImpl implements BoardDAO {
 		}
 		sqlSession.insert("mapper.board.insertNewImage",imageFileList);
 	}
-	
-   */
 	
 	@Override
 	public ArticleVO selectArticle(int articleNO) throws DataAccessException {
@@ -79,5 +75,4 @@ public class BoardDAOImpl implements BoardDAO {
 	private int selectNewImageFileNO() throws DataAccessException {
 		return sqlSession.selectOne("mapper.board.selectNewImageFileNO");
 	}
-
 }

@@ -41,8 +41,4 @@ public class ImageVO {
 	public void setArticleNO(int articleNO) {
 		this.articleNO = articleNO;
 	}
-	
-	
-	
-
 }
